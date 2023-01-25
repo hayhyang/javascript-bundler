@@ -1,3 +1,7 @@
+const fs = require('fs')
+
+fs.mkdirSync('dist')
+fs.writeFileSync('dist/index.html', `
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,3 +15,4 @@
 <h1>hello, world</h1>
 </body>
 </html>
+`)
